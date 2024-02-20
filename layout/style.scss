@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+
+    // padding: 50px;
+}
+
+.container {
+    width: 1266px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 26px;
+
+    .header-logo {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        color: rgba(227, 31, 36, 1);
+    }
+
+    .header-user {
+        font-size: 16px;
+        line-height: 20px;
+        color: rgba(51, 51, 51, 1);
+
+    }
+}
+
+main {
+    display: flex;
+    background: rgba(253, 253, 253, 1);
+    min-height: 589px;
+    border: 0px, 10px, 10px, 0px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    min-width: 276px;
+    margin-left: 20px;
+    margin-right: 30px;
+
+    padding-top: 27px;
+
+
+    .sidebar-title {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+
+    }
+
+    .sidebar-search {
+        border: 1.5px solid rgba(233, 236, 239, 1);
+        border-radius: 8px;
+        padding: 16px;
+        background: white;
+        width: 240px;
+
+        &::placeholder {
+            font-size: 14px;
+            line-height: 17px;
+            text-align: left;
+            color: rgba(118, 120, 125, 1);
+            // color: red;
+        }
+
+        &:focus,
+        &:active {
+            outline: none;
+            font-size: 14px;
+            line-height: 17px;
+            color: rgba(118, 120, 125, 1);
+        }
+    }
+
+    .result-title {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+
+    }
+
+    .sidepar-search-text {
+        font-size: 14px;
+        line-height: 17px;
+
+        margin-top: -12px;
+        color: rgba(118, 120, 125, 1);
+        ;
+    }
+
+    .sidebar-cards {
+        .sidebar-card {
+            display: flex;
+            align-items: center;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-bottom: 18px;
+            border: 1px solid rgba(224, 224, 224, 1);
+            overflow: hidden;
+
+            .card-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 5px;
+                padding-left: 15px;
+                width: 100%;
+                height: 70px;
+
+                .card-title {
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 17px;
+
+                }
+
+                .card-mail {
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: rgba(118, 120, 125, 1);
+                    ;
+                }
+            }
+
+            .active-card {
+                background: rgba(224, 224, 224, 1);
+                // overflow: hidden;
+            }
+        }
+    }
+}
+
+.main-content {
+    // display: flex;
+    width: 100%;
+
+    border-left: 1px solid rgba(222, 222, 221, 1);
+
+    .main-content-card {
+        display: flex;
+        padding: 30px;
+        gap: 61px;
+
+        .main-card-descr {
+
+            .main-content-title {
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 22px;
+                margin-bottom: 10px;
+                color: rgba(0, 0, 0, 1);
+            }
+
+            .main-content-mail,
+            .main-content-phone {
+                font-size: 14px;
+                line-height: 20px;
+                color: rgba(118, 120, 125, 1);
+                margin-bottom: 10px;
+            }
+
+            .main-content-descr {
+                margin-top: 20px;
+                margin-bottom: 25px;
+            }
+
+            .main-content-descr-text {
+                font-size: 14px;
+                line-height: 17px;
+
+                color: rgba(118, 120, 125, 1);
+            }
+
+            span {
+                font-weight: 600;
+                color: rgba(0, 0, 0, 1);
+                margin-right: 10px;
+            }
+        }
+
+
+    }
+
+    .main-content-text {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 400;
+        color: rgba(118, 120, 125, 1);
+
+    }
+}
