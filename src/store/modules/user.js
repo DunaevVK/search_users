@@ -55,7 +55,7 @@ export default {
                     return searchId;
                 } else {
                     element.trim()
-                    let newElement = element[0].toUpperCase() + element.slice(1)
+                    if (element) { let newElement = element[0].toUpperCase() + element.slice(1) }
                     index + 1 == id.length ? searchSurname += `username=${newElement}` : searchSurname += `username=${newElement}&`
                     return searchSurname;
                 }
